@@ -1,3 +1,4 @@
+<!*****HEADERS**********{{{> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +9,11 @@ you@aleix_alva:~$
 </title>
 <meta name="author" content="aleix"/>
 <link rel="stylesheet" type="text/css" href="css.css" media="screen" title="aleix" />
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </script>
+<!*****mobile or desktop**********{{{>
 <style type="text/css">
  .mobileHide { display: inline;}
  /* Smartphone Portrait and Landscape */
@@ -26,120 +28,100 @@ you@aleix_alva:~$
    and (min-device-width : 320px)
    and (max-device-width : 480px){ .mobileShow { display: inline;}}
 </style>
+<!*****mobile or desktop*********}}}> 
 </head>
+<!*****HEADERS*********}}}> 
 <body>
-<div class="mobileShow">
-<small>@aleix_alva:~$</small><br><br>
-</div>
-<small><i>"Everyone must destroy their life. According to the way they do it, they're either triumphants or failures."</i> (E. Cioran, <i>The book of delusions</i>)</small><br><br>
-
-<!************************************BEGIN-COMIC-STRIP*******************************************>
-<div class="mobileHide">
-<a  href="http://www.lawebdefisica.com/humor/tiras" target=_blank><img src="http://www.lawebdefisica.com/humor/tiras/comic/d330f61ebd66ac1989ed4906df7e5713565212c9.gif" title="Hawking" width=500></a>
-<!/comic>
-</div>
-<div class="mobileShow">
-<a  href="http://www.lawebdefisica.com/humor/tiras" target=_blank><img src="http://www.lawebdefisica.com/humor/tiras/thumbnail/d330f61ebd66ac1989ed4906df7e5713565212c9.gif" title="Hawking" ></a>
-<!/comic>
-</div>
-<!************************************END-COMIC-STRIP*******************************************>
-<!************************************BEGIN-HOME-ROOT*******************************************>
+<!*****quotation**********{{{>
+<small><i>"nyi-nyi-nyi-nyi"</i> (calfred hitchcock<i></i>)</small><br><br>
+<!*****quotation*********}}}> 
+<!*****current comic**********{{{>
+<a  href="http://www.lawebdefisica.com/humor/tiras" target=_blank>
+<img src="https://www.lawebdefisica.com/humor/tiras/comic/2e454599f2a0b467f050c4a1de296bd0a6578879.gif" title="golden irratio" width=500></a>
+<!*****current comic*********}}}> 
+<!*****home-root**********{{{>
 <ul><!raiz>
 <h1><a href="index.html#last" onclick="toggle('node1')">home</a></h1>
     <ul id="node1" style="display:none"><!home>
-
-
-
-
-<!************************************BEGIN-MUSIC-LOG*******************************************>
+<!*****music-log**********{{{>
 <h2><a id="id_music" href="index.html#last" onclick="toggle('music')">music</a></h2><!music><ul id="music" style="display:none">
 <!music><ul id="music" style="display:none"><br>
 <script type="text/javascript"> $("#id_music").click(function(){$("#music").load("files/music.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br> </ul><!music>
 
-<!__________________________________END_OF_MUSIC_BLOG____________________________________________________>
  </ul><!music>
-<!************************************END-MUSIC-LOG*******************************************>
-
-<!************************************BEGIN-MEDITACCIÓN*******************************************>
+<!*****music-log*********}}}> 
+<!*****meditacción**********{{{>
 <h2><a id="id_meditaccion" href="index.html#last" onclick="toggle('meditaccion')">meditacción</a></h2><!meditaccion><ul id="meditaccion" style="display:none">
 <!meditaccion><ul id="meditaccion" style="display:none"><br>
 <script type="text/javascript"> $("#id_meditaccion").click(function(){$("#meditaccion").load("files/meditaccion.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br> </ul><!meditaccion>
 </ul><!meditaccion>
-<!************************************END-MEDITACCIÓN*******************************************>
-
-
-
-
-<!************************************BEGIN-BLOG*******************************************>
+<!*****meditacción*********}}}> 
+<!*****blog**********{{{>
 <h2><a href="index.html#last" onclick="toggle('node_blog')">blog</a></h2><!blog><ul id="node_blog" style="display:none">
-<!__________________________________ENTRY_0006____________________________________________________>
+<!*****blog-0006**********{{{>
 <h3><a id="id_node_entry_0006" href="index.html#last" onclick="toggle('node_entry_0006')"> 6. La Oca Asesina</a></h3>
 <!entry_0005><ul id="node_entry_0006" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_entry_0006").click(function(){$("#node_entry_0006").load("files/blog/blog_0006.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br> </ul><!entry_0006>
-<!__________________________________END_OF_ENTRY_0006____________________________________________________>
-<!__________________________________ENTRY_0005____________________________________________________>
+<!*****blog-0006*********}}}> 
+<!*****blog-0005**********{{{>
 <h3><a id="id_node_entry_0005" href="index.html#last" onclick="toggle('node_entry_0005')"> 5. The r0oT experiment</a></h3>
 <!entry_0005><ul id="node_entry_0005" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_entry_0005").click(function(){$("#node_entry_0005").load("files/blog/blog_0005.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br> </ul><!entry_0005>
-<!__________________________________END_OF_ENTRY_0005____________________________________________________>
-<!__________________________________ENTRY_0004____________________________________________________>
+<!*****blog-0005*********}}}> 
+<!*****blog-0004**********{{{>
 <h3><a id="id_node_entry_0004" href="index.html#last" onclick="toggle('node_entry_0004')"> 4. Remembering songs recorded at home</a></h3>
 <!entry_0004><ul id="node_entry_0004" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_entry_0004").click(function(){$("#node_entry_0004").load("files/blog/blog_0004.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br></ul><!entry_0004>
-<!__________________________________END_OF_ENTRY_0004____________________________________________________>
-<!__________________________________ENTRY_0003____________________________________________________>
+<!*****blog-0004*********}}}> 
+<!*****blog-0003**********{{{>
 <h3><a id="id_node_entry_0003" href="index.html#last" onclick="toggle('node_entry_0003')"> 3. Freedom</a></h3>
 <!entry_0003><ul id="node_entry_0003" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_entry_0003").click(function(){$("#node_entry_0003").load("files/blog/blog_0003.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br> </ul><!entry_0003>
-<!__________________________________END_OF_ENTRY_0003____________________________________________________>
-<!__________________________________ENTRY_0002____________________________________________________>
-
+<!*****blog-0003*********}}}> 
+<!*****blog-0002**********{{{>
 <h3><a id="id_node_entry_0002" href="index.html#last" onclick="toggle('node_entry_0002')"> 2. Speed School</a></h3>
 <!entry_0002><ul id="node_entry_0002" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_entry_0002").click(function(){$("#node_entry_0002").load("files/blog/blog_0002.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br>
 </ul><!entry_0002>
-<!__________________________________END_OF_ENTRY_0002____________________________________________________>
-<!__________________________________ENTRY_0001____________________________________________________>
+<!*****blog-0002*********}}}> 
+<!*****blog-0001**********{{{>
 <h3><a id="id_node_entry_0001" href="index.html#last" onclick="toggle('node_entry_0001')"> 1. A new hope</a></h3>
 <!entry_0001><ul id="node_entry_0001" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_entry_0001").click(function(){$("#node_entry_0001").load("files/blog/blog_0001.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
 <br><br>
 </ul><!entry_0001>
-<!__________________________________END_OF_ENTRY_0001____________________________________________________>
-<!__________________________________END_OF_BLOG____________________________________________________>
+<!*****blog-0001*********}}}> 
  </ul><!blog>
-<!************************************END-BLOG*******************************************>
-<!_________________________________BEGIN_ERUCTOS_FILOSÓFICOS____________________________________________________>
-
-
+<!*****blog*********}}}> 
+<!*****eructos-filosóficos**********{{{>
 <h2><a id="id_node_eructos" href="index.html#last" onclick="toggle('node_eructos')"> eructos filosóficos</a></h2>
 <!eructos><ul id="node_eructos" style="display:none"><br>
 <script type="text/javascript"> $("#id_node_eructos").click(function(){$("#node_eructos").load("files/eructos_filosoficos.html");});</script> 
-
 </ul><!eructos>
-
-
-<!__________________________________END_OF_ERUCTOS_FILOSÓFICOS____________________________________________________>
-
- <!__________________________________BEGIN_IMPORTUNATE_PERMUTATION___________________>
+<!*****eructos-filosóficos*********}}}> 
+<!*****importunate permutation**********{{{>
 <h2><a id="id_short" href="index.html#last" onclick="toggle('short')">importunate permutation</a></h2>
 <ul id="short" style="display:none">
-
+Calfred Hitchcock<br><br>
+mathematics for the asthmatic me<br><br>
+me sube la tremperatura<br><br>
+me pone un poco nerviosísima<br><br>
+fired &amp; fried<br><br>
 el piano està desafiant<br><br>
 con pero es peor<br><br>
 soy ovnívoro<br><br>
@@ -178,33 +160,23 @@ Tomen daca, nata comed, tomad acné, matan cedo.<br><br>Señorita Escarlata. Se�
 wolf flow<br><br>own my own ♫<br><br>
 <br><br>
 </ul><!short>
- <!__________________________________END_IMPORTUNATE_PERMUTATION  ___________________>
-
-
-<!************************************BEGIN-READINGS*******************************************>
-
+<!*****importunate permutation*********}}}> 
+<!*****readings**********{{{>
 <h2> <a id="id_readings" href="index.html#last" onclick="toggle('readings')"> book log</a></h2>
 <!entry_readings><ul id="readings" style="display:none"><br>
 <script type="text/javascript"> $("#id_readings").click(function(){$("#readings").load("files/books.html",function () {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "myDiv"]);} );});</script> 
-
-
 </ul><!readings>
-<!************************************END-READINGS*******************************************>
-<!************************************BEGIN-TEACHING*******************************************>
-
+<!*****readings*********}}}> 
+<!*****teaching**********{{{>
 <h2> <a id="id_teaching" href="index.html#last" onclick="toggle('teaching')"> teaching</a></h2>
 <ul id="teaching" style="display:none">
-
-<!************************************BEGIN-STATICS-COURSE*******************************************>
+<!*****statics-course**********{{{>
 <a href="https://al-al-physics.github.io/statics/" target=_blank > <h3>an introduction to statics for engineers</h3></a>
-<!************************************END-STATICS-COURSE*******************************************>
+<!*****statics-course*********}}}> 
 </ul><!teaching>
-
-<!************************************END-TEACHING*******************************************>
-
-
-<!************************************BEGIN-CONTACT*******************************************>
+<!*****teaching*********}}}> 
+<!*****contact**********{{{>
 <h2><a href="index.html#last" onclick="toggle('node_contact')">
       contact</a></h2>
       <ul id="node_contact" style="display:none"><br>
@@ -212,35 +184,23 @@ wolf flow<br><br>own my own ♫<br><br>
        <img src="files/email.png" width=150>  
         <br><br>        
        you can also send me a PGP encrypted email by using my <a href="files/al-al_pubkey.txt" target=_blank>public key</a>
-<!************************************END-CONTACT*******************************************>
  </ul><!contact>   
+<!*****contact*********}}}> 
  </ul><!home>
-
 </ul><!raiz>
 <br><br><br><br><br>
-<!************************************BEGIN-FOOTER*******************************************>
-<!footer_begins>
-
+<!*****home-root*********}}}> 
+<!*****footer**********{{{>
 <center><a href="vegan/index.html" target=_blank>vegan info</a></center>
-
 <br><br><br><br>
-
-
 <center><small>Powered by <a href="http://www.lawebdefisica.com" target=_blank>La web de F&iacute;sica</a></small></center>
-<!footer_ends>
-<!************************************END-FOOTER*******************************************>
-
-<!************************************BEGIN-PHOTOS*******************************************>
-
-
+<!*****footer*********}}}> 
+<!*****photos**********{{{>
 <!br><!br><!h2>
 <!<a href="https://www.instagram.com/meditaction" target=_blank>
 <!<img src="files/icon.png" title="instagram"><!/a><!/h2>
-
-
-
-
-<!************************************END-PHOTOS*******************************************>
+<!*****photos*********}}}> 
+<!*****expand-collapse code**********{{{>
 
 
 <!Code to expand/collapse branches>
@@ -267,6 +227,7 @@ function toggle2(id, link) {
 }
 
 </script>
+<!*****expand-collapse code*********}}}> 
 </body>
 </html>
 
