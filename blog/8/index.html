@@ -1,0 +1,81 @@
+<!-- **********{{{ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../../css.css" media="screen" title="aleix" />
+</head>
+<body>
+<!-- *****}}} --> 
+<!Mr. Robot>
+<br>
+
+prime contact:<br><br>
+
+In Carl Sagan's book <i>Contact</i>, and also in the movie, Ellen Arroway finds a signal from 
+space that consists in a sequence of ascending prime numbers, just the first hundreds (I don't know
+if Sagan specified the exact length of the sequence.)<br><br>
+
+In his series <i>Cosmos</i> he also mentions such a signal. At Chapter 12,
+around 43:10, we can hear it. I estimate the pulses are separated about 0.2 s. <br><br>
+
+I have written a simple script that generates a signal like this. Just for fun. And also
+to set it as my new phone ringtone. <br><br>
+
+It requires a GNU/Linux
+terminal with sox and ffmpeg installed. 
+Notice how you can edit all the parameters in the script: the frequency and length of the beeps,
+the prime sequence, etc.<br>
+
+<pre><code>
+#! /bin/bash
+#script to generate a Contact signal consisting in prime numbers
+sox -n -r 44100 silence.wav synth 0.2 sin 000  #silence between primes 0.2s
+sox -n -r 44100 space.wav synth 0.10 sin 000 #space between beeps 0.1s
+sox -n -r 44100 signal.wav synth 0.10 sin 1200 #beeps 0.1s 880Hz
+sox $( \
+for i in {2,3,5,7,11,13,17,19} #prime sequence
+do
+for ((j=1; j<= $i; j++)) 
+do
+echo -n "signal.wav "
+echo -n "space.wav "
+done
+echo -n "silence.wav "
+done 
+echo -n "temp.wav")
+sox temp.wav contact.wav reverb  #add some reverb
+ffmpeg -loglevel -8 -i contact.wav -acodec libvorbis contact.ogg #wav -> ogg
+rm silence.wav
+rm space.wav
+rm signal.wav
+rm temp.wav
+rm contact.wav
+</code></pre>
+
+Link to the source file <a href="contact.sh" download><i>here</i></a>. You need to
+give it execution permissions with:
+<pre><code>
+chmod +x contact.sh
+</code></pre>
+And then execute it as
+<pre><code>
+./contact.sh
+</code></pre>
+
+For these parameters, the generated file is:<br><br>
+
+<audio controls>
+  <source src="contact.ogg" type="audio/ogg">
+</audio><br><br>
+
+You can also download the audio file (for the parameters in the script) by clicking <a href="contact.ogg" download><i>here</i></a>. (Perhaps you need to click it with the right-button and select 'save link as'.)<br><br>
+
+
+
+
+<br><br>direct link to this post: <a href="https://aleix.lawebdefisica.com/blog/8/" download><i>here</i></a>
+<br><br>
+</body>
+</html>
+
