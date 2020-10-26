@@ -31,7 +31,7 @@ the prime sequence, etc.<br>
 #script to generate a Contact signal consisting in prime numbers
 sox -n -r 44100 silence.wav synth 0.2 sin 000  #silence between primes 0.2s
 sox -n -r 44100 space.wav synth 0.10 sin 000 #space between beeps 0.1s
-sox -n -r 44100 signal.wav synth 0.10 sin 1200 #beeps 0.1s 880Hz
+sox -n -r 44100 signal.wav synth 0.10 sin 1200 #beeps 0.1s 1200Hz
 sox $( \
 for i in {2,3,5,7,11,13,17,19} #prime sequence
 do
@@ -52,7 +52,7 @@ rm temp.wav
 rm contact.wav
 </code></pre>
 
-Link to the source file <a href="blog/8/contact.sh" download><i>here</i></a>. You need to
+Link to the source file <a href="/blog/8/contact.sh" download><i>here</i></a>. You need to
 give it execution permissions with:
 <pre><code>
 chmod +x contact.sh
@@ -65,15 +65,14 @@ And then execute it as
 For these parameters, the generated file is:<br><br>
 
 <audio controls>
-  <source src="blog/8/contact.ogg" type="audio/ogg">
+  <source src="/blog/8/contact.ogg" type="audio/ogg">
 </audio><br><br>
 
-You can also download the audio file (for the parameters in the script) by clicking <a href="blog/8/contact.ogg" download><i>here</i></a>. (Perhaps you need to click it with the right-button and select 'save link as'.)<br><br>
+You can also download the audio file (for the parameters in the script) by clicking <a href="/blog/8/contact.ogg" download><i>here</i></a>. (Perhaps you need to click it with the right-button and select 'save link as'.)<br><br>
 
 
 
 
-<br><br>direct link to this post: <a href="https://aleix.lawebdefisica.com/blog/8/" target=_blank><i>here</i></a>
 <br><br>
 </body>
 </html>

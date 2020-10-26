@@ -7,12 +7,13 @@
 </head>
 <body>
 <!-- *****headers*********}}} --> 
+<h1>littleatura</h1>
+<h2>eructos filosóficos</h2>
 <!-- *****[151,200]*****{{{ -->
 <!-- *****[151,200] code*****{{{-->
 <h3><a href="#last" onclick="toggle('151200')">[151,200]</a></h3>
-<ul id="151200" style="display:none"><![151,200]><br><br>
+<ul id="151200" style="display:none"><![151,200]>
 <!-- *****[151,200] code*****}}} -->
-
 
 <!-- *****204*****{{{ -->
 <a id="204" href="#last" onclick="toggle('eructo_204')"><h3>204</h3></a>
@@ -516,7 +517,7 @@ polivalente, multivérsico... ¡pero mono al fin y al cabo!
 <!-- *****[101,150]*****{{{ -->
 <!-- *****[101,150] code*****{{{ -->
 <h3><a href="#last" onclick="toggle('[101,150]')">[101,150]</a></h3>
-<ul id="[101,150]" style="display:none"><![101,150]><br><br>
+<ul id="[101,150]" style="display:none"><![101,150]>
 <!-- *****[101,150] code*****}}} -->
 <!-- *****150*****{{{ -->
 <a id="id_eructo_150" href="#last" onclick="toggle('eructo_150')"><h3>150</h3></a>
@@ -1821,7 +1822,7 @@ Un profesor tiene mucho que aprender de un stripper. La profesión de ambos, des
 <!-- *****[1,50]*****{{{ -->
 <!-- *****[1,50] code*****{{{ -->
 <h3><a href="#last" onclick="toggle('[1,50]')">[1,50]</a></h3>
-<ul id="[1,50]" style="display:none"><![1,50]><br><br>
+<ul id="[1,50]" style="display:none"><![1,50]>
 <!-- *****[1,50] code*****}}} -->
 <!-- *****50*****{{{ -->
 <a id="id_eructo_50" href="#last" onclick="toggle('eructo_50')"><h3>050</h3></a>
@@ -2162,9 +2163,40 @@ El arte como eructo. La filosofía como regüeldo. La creación como el ascenso 
 <br>
 <br><br></ul><![1,50]>
 <!-- *****[1,50]*****}}} -->
-<!-- *****catálogo de meteoros**********{{{ -->
-- <a href="files/catalogo_de_meteoros.pdf" target=_blank>Catálogo de Meteoros (2008)</a><br><br>
-<!-- *****catálogo de meteoros*********}}} --> 
+<br>----------------------------------------<br><br>
+- <a href="/littleatura/catalogo_de_meteoros.pdf" download>catálogo de meteoros (2008) [pdf]</a><br><br>
+- <a href="/littleatura/cuento_falsificado.pdf" download>cuento falsificado [pdf]</a><br><br>
+- <a href="/littleatura/heroe_por_defecto.pdf" download>héroe por defecto [pdf]</a><br><br>
+- <a href="/littleatura/Relinquete_me_In_Pace.pdf" download>Relinquete me In Pace [pdf]</a><br><br>
+- <a href="/littleatura/the_cockfish.pdf" download>el pez polla (the cockfish) [pdf]</a><br><br>
 </body>
+<!*****expand-collapse code**********{{{>
+
+
+<!Code to expand/collapse branches>
+<script type="text/javascript">
+function toggle(id) {
+  var e = document.getElementById(id);
+
+  if (e.style.display == '')
+    e.style.display = 'none';
+  else
+    e.style.display = '';
+}
+
+function toggle2(id, link) {
+  var e = document.getElementById(id);
+
+  if (e.style.display == '') {
+    e.style.display = 'none';
+    link.innerHTML = 'Expand';
+  } else {
+    e.style.display = '';
+    link.innerHTML = 'Collapse';
+  }
+}
+
+</script>
+<!*****expand-collapse code*********}}}> 
 </html>
 

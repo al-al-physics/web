@@ -2,7 +2,7 @@
 #script to generate a Contact signal consisting in prime numbers
 sox -n -r 44100 silence.wav synth 0.2 sin 000  #silence between primes 0.2s
 sox -n -r 44100 space.wav synth 0.10 sin 000 #space between beeps 0.1s
-sox -n -r 44100 signal.wav synth 0.10 sin 1200 #beeps 0.1s 880Hz
+sox -n -r 44100 signal.wav synth 0.10 sin 1200 #beeps 0.1s 1200Hz
 sox $( \
 for i in {2,3,5,7,11,13,17,19} #prime sequence
 do
