@@ -1,0 +1,553 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.11.14)  14 NOV 2020 14:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**eructos_filosoficos.tex
+(./eructos_filosoficos.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count177
+)
+\es@quottoks=\toks14
+\es@quotdepth=\count178
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+Package babel Info: Making ' an active character on input line 725.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box45
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
+\ttl@plus=\dimen136
+\ttl@minus=\dimen137
+\ttl@toksa=\toks17
+\titlewidth=\dimen138
+\titlewidthlast=\dimen139
+\titlewidthfirst=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
+\l__pdf_internal_box=\box46
+\g__pdf_backend_object_int=\count179
+\l__pdf_backend_content_box=\box47
+\l__pdf_backend_model_box=\box48
+\g__pdf_backend_annotation_int=\count180
+\g__pdf_backend_link_int=\count181
+\g__pdf_backend_link_sf_int=\count182
+)
+(./eructos_filosoficos.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+\openout1 = `eructos_filosoficos.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 18.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 18
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+
+
+
+]
+Underfull \hbox (badness 1057) in paragraph at lines 63--65
+\OT1/cmr/m/n/10.95 detrimento ni del que lo hizo ni del que
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 63--65
+\OT1/cmr/m/n/10.95 lo (re)hace, sino del que no sabe valorar
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
+
+]
+Underfull \hbox (badness 1902) in paragraph at lines 76--78
+\OT1/cmr/m/n/10.95 ?`por qu^^Se la m^^Saquina se iba a dignar a
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 76--78
+\OT1/cmr/m/n/10.95 satisfactoria. Nunca enunciar^^S^^Pa algo como:
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 90--92
+\OT1/cmr/m/n/10.95 que para serlo debe desarrollar todas sus
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 104--106
+\OT1/cmr/m/n/10.95 de la explotaci^^Son del potencial gigantesco
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 104--106
+\OT1/cmr/m/n/10.95 necedad ilimitada de la humanidad puede
+ []
+
+[3]
+Underfull \hbox (badness 1824) in paragraph at lines 111--113
+[]\OT1/cmr/m/n/10.95 Si, como muchos dan por supuesto, la
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 118--119
+\OT1/cmr/m/n/10.95 Perseguir a negros, jud^^S^^Pos, homosexuales...
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 118--119
+\OT1/cmr/m/n/10.95 moderno, algo que el mundo no ha visto
+ []
+
+[4]
+Underfull \hbox (badness 1019) in paragraph at lines 130--131
+\OT1/cmr/m/n/10.95 exclusivamente a la noche. Aquel que sea
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 130--131
+\OT1/cmr/m/n/10.95 y al m^^Susculo, y se deje de enfermedades
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 130--131
+\OT1/cmr/m/n/10.95 mortecinas y taciturnas. Aquel que cante
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 130--131
+\OT1/cmr/m/n/10.95 arrebate la exclusividad del lirismo a los
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 136--137
+\OT1/cmr/m/n/10.95 suelta a su indignaci^^Son. La mierda no es
+ []
+
+[5]
+Underfull \hbox (badness 1460) in paragraph at lines 154--155
+\OT1/cmr/m/n/10.95 a descender tanto. Tememos, nosotros los
+ []
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 1005) in paragraph at lines 208--209
+\OT1/cmr/m/n/10.95 dos mundos. Es un gran error enterrar o
+ []
+
+[8]
+Underfull \hbox (badness 1348) in paragraph at lines 215--216
+[]\OT1/cmr/m/n/10.95 Lo artificial es un concepto ficticio, un
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 215--216
+\OT1/cmr/m/n/10.95 entre natural y artificial es algo artificial,
+ []
+
+[9]
+Underfull \hbox (badness 1558) in paragraph at lines 281--282
+[]\OT1/cmr/m/n/10.95 El objetivo de todo verdugo vocacional
+ []
+
+[10]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 305.
+
+Underfull \hbox (badness 1184) in paragraph at lines 305--306
+\OT1/cmr/m/n/10.95 es lo mismo, habr^^S^^Pa que darse cuenta de
+ []
+
+[11] [12]
+Underfull \hbox (badness 1320) in paragraph at lines 367--368
+\OT1/cmr/m/n/10.95 al alcance de cualquiera, porque no salta
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 367--368
+\OT1/cmr/m/n/10.95 lesiones violentas, aunque s^^S^^P desgastes por
+ []
+
+[13]
+Underfull \hbox (badness 1122) in paragraph at lines 387--388
+\OT1/cmr/m/n/10.95 podr^^San tambi^^Sen reinar desde una de esas
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 387--388
+\OT1/cmr/m/n/10.95 ?`Es la ciencia directamente una disciplina
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+[15]
+Underfull \hbox (badness 1303) in paragraph at lines 431--432
+\OT1/cmr/m/n/10.95 para mi idea no tengo forma de rastreo.
+ []
+
+[16] [17]
+Underfull \hbox (badness 1043) in paragraph at lines 455--456
+[]\OT1/cmr/m/n/10.95 Es muy dif^^S^^Pcil ha-blar con pro-pie-dad de
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 462--463
+\OT1/cmr/m/n/10.95 sus v^^S^^Pctimas. En cambio, los no vampiros
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 462--463
+\OT1/cmr/m/n/10.95 g^^Senero de terror. Muy bien, ?`a qu^^Se clase
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 462--463
+\OT1/cmr/m/n/10.95 v^^S^^Pctimas. Luego, como no-muerto, se hizo
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+[19]
+Underfull \hbox (badness 1112) in paragraph at lines 509--513
+[]\OT1/cmr/m/n/10.95 A^^Sun no sabemos si una teor^^S^^Pa final de
+ []
+
+
+Underfull \vbox (badness 2582) has occurred while \output is active []
+
+ [20]
+[21] [22]
+Underfull \hbox (badness 1953) in paragraph at lines 681--692
+[]\OT1/cmr/m/n/10.95 Un profesor debe tener cuidado de no
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 681--692
+\OT1/cmr/m/n/10.95 y evolucionan, aquel se idiotiza y cae en
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 681--692
+\OT1/cmr/m/n/10.95 de encontrar. Lo m^^Sas f^^Sacil es que acabe
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 681--692
+\OT1/cmr/m/n/10.95 clases deber^^S^^Pan ser simplemente un reflejo
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 681--692
+\OT1/cmr/m/n/10.95 de su ascensi^^Son, y que el aprendizaje se
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 681--692
+\OT1/cmr/m/n/10.95 de esta, conceptos como temario, plan de
+ []
+
+[23]
+Underfull \hbox (badness 1152) in paragraph at lines 697--723
+\OT1/cmr/m/n/10.95 pocos los sistemas ensayados hasta ahora.
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 697--723
+\OT1/cmr/m/n/10.95 tir^^Sanica, e incluso podr^^S^^Pamos salir de ella
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 697--723
+\OT1/cmr/m/n/10.95 que cualquier otra cosa. En el fondo, la
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 697--723
+\OT1/cmr/m/n/10.95 del ecosistema, ?`qu^^Se no har^^S^^Pa un sistema
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 697--723
+\OT1/cmr/m/n/10.95 menos bueno? ?`Y si existiera un sistema
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 697--723
+\OT1/cmr/m/n/10.95 ser capaces de crear seres mucho mejores
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 728--737
+\OT1/cmr/m/n/10.95 que no comemos carne alegando la poca
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 728--737
+\OT1/cmr/m/n/10.95 parece que implique debilidad o falta de
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 728--737
+\OT1/cmr/m/n/10.95 ?`Y qu^^Se comen estas magn^^S^^Pficas criaturas?
+ []
+
+[24]
+Underfull \hbox (badness 1852) in paragraph at lines 742--751
+\OT1/cmr/m/n/10.95 que no comemos carne alegando la poca
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 742--751
+\OT1/cmr/m/n/10.95 parece que implique debilidad o falta de
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 742--751
+\OT1/cmr/m/n/10.95 ?`Y qu^^Se comen estas magn^^S^^Pficas criaturas?
+ []
+
+[25] [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \hbox (badness 1019) in paragraph at lines 909--912
+\OT1/cmr/m/n/10.95 Por eso busco la \OT1/cmr/m/it/10.95 piedra \OT1/cmr/m/n/10.
+95 filosofal... Ya me
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 909--912
+\OT1/cmr/m/n/10.95 gustar^^S^^Pa ser flexible y gr^^Sacil, dionis^^S^^Paco y
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 947--950
+\OT1/cmr/m/n/10.95 y puramente superficial. Adem^^Sas, una vez
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 947--950
+\OT1/cmr/m/n/10.95 realizado el enlace, la reacci^^Son se da por
+ []
+
+[28]
+Underfull \hbox (badness 1072) in paragraph at lines 963--964
+\OT1/cmr/m/n/10.95 es de car^^Sacter estad^^S^^Pstico, y por lo tanto
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 969--970
+[]\OT1/cmr/m/n/10.95 Hace falta mucha m^^Sas az^^Sucar para ser
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 975--979
+\OT1/cmr/m/n/10.95 invierte poca energ^^S^^Pa pero los dispara en
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 984--993
+\OT1/cmr/m/n/10.95 sufrirla ni un solo ^^Sapice. Puede uno, en
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 1009--1011
+[]\OT1/cmr/m/n/10.95 El mundo, gracias a las redes sociales,
+ []
+
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [29]
+[30]
+Underfull \hbox (badness 1107) in paragraph at lines 1126--1137
+\OT1/cmr/m/n/10.95 diferentes consecuencias, de diversa ^^S^^Pndole,
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 1126--1137
+\OT1/cmr/m/n/10.95 ?`O pasaremos entonces a tener diferentes
+ []
+
+[31] [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 1221--1226
+\OT1/cmr/m/n/10.95 teniendo dos pies, es posible pisarse a s^^S^^P
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 1221--1226
+\OT1/cmr/m/n/10.95 mismo? ?`Has aprendido a que tu sombra
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 1244--1245
+[]\OT1/cmr/m/n/10.95 P^^Serez vive con pereza... pareciendo que
+ []
+
+[33] [34]
+Underfull \hbox (badness 1472) in paragraph at lines 1343--1357
+\OT1/cmr/m/n/10.95 ning^^Sun verdadero \OT1/cmr/m/it/10.95 c^^Sodigo \OT1/cmr/m
+/n/10.95 y adem^^Sas suelen
+ []
+
+[35] [36]
+Underfull \hbox (badness 1484) in paragraph at lines 1449--1450
+[]\OT1/cmr/m/n/10.95 La voluntad es la fuerza del alma. La
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 1462--1467
+\OT1/cmr/m/n/10.95 de los buenos, sabe improvisar. La ^^Sunica
+ []
+
+[37]
+Underfull \hbox (badness 1565) in paragraph at lines 1559--1561
+[]\OT1/cmr/m/n/10.95 Me dan pena los que no sienten pena
+ []
+
+[38]
+Underfull \hbox (badness 1910) in paragraph at lines 1626--1628
+[]\OT1/cmr/m/n/10.95 Tener voluntad almacenada en el disco
+ []
+
+
+Underfull \vbox (badness 4205) has occurred while \output is active []
+
+
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [39]
+Underfull \hbox (badness 1077) in paragraph at lines 1693--1704
+\OT1/cmr/m/n/10.95 no se convierte en virtuoso, de la misma
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 1709--1710
+[]\OT1/cmr/m/n/10.95 No hay empresas, sino empresa, porque
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1759--1761
+[]\OT1/cmr/m/n/10.95 educaci^^Son: en-se~nar y en-se~nar-
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 1785--1790
+\OT1/cmr/m/n/10.95 activa luces y sonidos... mientras nosotros
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 1785--1790
+\OT1/cmr/m/n/10.95 agujero. Como un pinball, as^^S^^P concibo la
+ []
+
+[41] [42] [43
+
+] (./eructos_filosoficos.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+) ) 
+Here is how much of TeX's memory you used:
+ 1826 strings out of 483049
+ 26071 string characters out of 5962797
+ 289266 words of memory out of 5000000
+ 16894 multiletter control sequences out of 15000+600000
+ 537972 words of font info for 45 fonts, out of 8000000 for 9000
+ 85 hyphenation exceptions out of 8191
+ 29i,6n,35p,2928b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on eructos_filosoficos.dvi (43 pages, 199492 bytes).
