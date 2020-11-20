@@ -1,0 +1,645 @@
+<!-- **********{{{ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../../css.css" media="screen" title="aleix" />
+</head>
+<body>
+<!-- *****}}} --> 
+<br>
+
+20000 leagues under the web:<br><br>
+
+Alice wants to send an email to Bob. Alice's address 
+is alice@amail.com, while Bob's is bob@bmail.com. In our
+world they can easily do it, but imagine a parallel universe 
+in which Alice cannot send it because her domain is 
+amail.com while Bob's is bmail.com. In order to communicate,
+Alice would need to sign up in bmail.com provider or Bob
+should sign up in amail.com services. Otherwise they could
+not communicate. It sounds crazy, doesn't it? Why couldn't 
+amail.com talk to bmail.com, you could ask? It would not 
+make sense.
+<br><br>
+
+Now imagine a world in which Alice wants to send an
+instantaneous message to Bob. Alice uses an app called 
+Asap and Bob uses another called Belegram. Unfortunately,
+Asap and Belegram cannot talk to each other so, unless
+Alice installs Belegram or Bob downloads Wasap they cannot
+communicate. This also sounds crazy, doesn't it? What an
+absurd parallel world! But wait! This sounds quite familiar!
+<br><br>
+
+It is perfectly reasonable that different companies like
+amail or bmail exist. It is also understandable that many
+messaging apps like Asap and Belegram appear. They provide
+variety, competition, different choices to appeal to
+different people. But why in the world wouldn't talk to
+each other? We live in a world artificially separated in
+countries, entities delimited by imaginary lines, but 
+even they, sometimes, talk to each other. Why are messaging
+apps are even more isolated than countries?
+<br><br>
+
+The reason is related to the phenomenon called "the winner takes all". 
+If you build a communication platform and you don't allow
+other platforms to communicate with you, two very different
+things can happen. First, and most probable, you will 
+never succeed so you disappear from the market. But, if by
+any chance of fortune, you appear on the market first, or
+one of the firsts, or if being billionare you buy the 
+most popular platform already working, then you can easily
+aglutinate and control most of the users of the world.
+<br><br>
+
+You may think "but people would never accept such a thing!"
+Yet they do. A self locking phenomenon occurs here. Imagine
+a new set of platforms is developed and made available. 
+First of all: will you notice they are there? Will they
+have the resources of paying for expensive ads? Will they be
+announced at other platforms that don't want to lose their
+users? And second: even if some users notice, and they
+install such new software, they will end having a contact
+list that rarely will surpass five users, if they are lucky.
+These enthusiasts can try to convince others, but most
+people will not see a point in changing to another service
+that feels like a field of crickets and tumbleweeds.
+<br><br>
+
+Some users will be convinced, though, and they will give
+it a try, just to discover that such apps have not a fancy
+design, that they lack features they have on their
+usual apps, or even that it has some bugs. Of course, their
+usual services are backed by thousands of paid developers
+and designers, while these alternative and ugly imitators
+are the product of some "geek people playing in their free time".
+<br><br>
+
+But somehow these alternative choices keep insisting. They
+seem to claim that they, unless the others, respect your
+freedom. Freedom? Am I not using all these apps for free?
+No, the alternative people will answer, not freedom as in
+free beer: freedom as liberty.
+Ah, they say, but I send from 
+my apps whatever I like. I have not suffered any kind of 
+censorship. No, the others answer, it is more subtle than
+that: freedom to audit your code, freedom to not being
+spied, freedom to... wait a minute, why would I want to 
+read some code? why should I care to be spied? I don't have
+nothing to be ashamed of, and I want the police to be able
+to do their job finding criminals. No, they answer, it is
+even subtler than that, it is just that... But at this
+point nobody is listening anymore. Who wants to spend such
+a time and energy in these ultrasubtle matters? They are
+happy sharing memes and pictures with friends and family.
+Life is too short to worry about these what if scenarios
+or about such creepy issues. Use this yourself and chat
+with your other nerd mates and leave us alone. Alone,
+what an irony! Leave us together, they should have said!
+<br><br>
+
+For two weeks, I have been exploring the world of XMPP and
+Matrix, which are two protocols for instant messaging. Since
+I am not an expert, and not trying to become one, I will 
+write many technical mistakes, like for example calling
+them protocols or saying that they are for messaging. I
+am sure they are designed for more things than instant
+messaging and I am also sure that they have an awful
+collection of technical terms to distinguish an infinite
+array of subtle differences. I don't care. I understand
+experts need terminology, but we the users don't want to
+know about it. To me, they are protocols to send messages,
+just that.
+<br><br>
+
+A word worth learning is federation. The ability to talk
+between different providers by using the same protocol is
+called federation, just like a federation of states talk
+to each other to pursue a general good while each
+retains its own idiosyncrasies. E-mail is federated, while
+messaging is usually not. Enter Matrix and XMPP, which are
+two choices to have messages the same 
+federated way we have email. 
+As a software developer, you could build your own client,
+which is a software that is able to understand and use
+the protocol in order to talk to other people. Or you can
+run an instance, so that you host a node in such networking
+web. But these are technicalities of little importance to
+a user like me. 
+<br><br>
+
+Let's say I want to use XMPP. How can I obtain an address to
+start sending messages? Like there is amail.com or wmail.org
+we also find providers that can give you an address. Will
+they give this for free? Most of them yes, but wait! Again
+free? Free as in free beer, gratis?
+Should I trust them? Will
+I have to run my own service because I cannot trust anyone?
+Should I be paying for just sending a few irrelevant 
+messages with friends? Why should I trust this geek
+XMPP provider while at the same time shitting on those
+big companies providing free services as well?
+<br><br>
+
+Let's say I signed for a xmpp service, for free, gratis. 
+Just to explore. Then I discovered a new thing. When you
+sign up for Asap, you also have the app to already start
+sending messages. This app is the "client". But here in the
+XMPP world I had the address but there was no app ready to
+use. So I had to find one. On mobile, an app called
+Conversations was available not only on popular app markets,
+but also in f-droid.org. Neat! And once installed I saw
+that they offer (paid) accounts as well. Not for now, but
+good to know, and since it is a federated thing I can use
+the address I got for free in the app. Cool! Is this what
+they mean by freedom? Let's see!
+<br><br>
+
+First cold fact: even importing contacts from my list, 
+nobody known to me is using XMPP so I cannot chat with
+anyone. So, not surrendering, I discover that there are
+chat rooms, public places to go and share messages. Maybe
+there are private groups as well, who knows. Once in some
+of them I start noticing they call these groups MUC, as
+multi user chat. OK, but I really hate jargon when you
+don't know if you are talking to an expert or not. It is
+very frequently used as a tribal signal. You use the
+jargon, and you understand it, ergo you belong. This
+reminds me of most math teachers who punish their students
+because the say "triangle with two same sides and one 
+not equal" instead of "isosceles". These teachers are
+complete idiots. They confuse math with jargon, and they
+try to make a career out of it. And they, of course, make
+students hate this kind of pseudomath which in fact is 
+just jargon. Jargon can be useful for college math (but
+never indispensable) but using it against children? Damn.
+Same for other things.
+<br><br>
+
+As I want to chat with my newly installed client I start
+writing some opinions here and there. I also discover that
+my Linux distribution, xubuntu, also has a pre-installed
+XMPP client called Pidgin. So I introduce my username and
+password and I now can use XMPP on the computer. Great!
+I start to receive my first responses. Many of them are
+so rude! What a welcome! Since I am new in those tribes,
+the room lord frequently appears to mark its territory,
+with the accomplice silence of the rest of users. Of course
+these rude room-lords are properly called administrators or 
+moderators or things like that, but man, what a way to 
+welcome a newcomer! It reminded me some movies of the
+Far West, when you entered the bar, with the piano out
+of tune playing ragtime, the ladies watching from upstairs,
+the swinging door still squeaking, a deafening silence...
+Fortunately, some nice users popped here and there, and
+not all room-lords were so dark. 
+<br><br>
+
+Another curious thing is that rooms seemed to be ordered
+by topic, so God forbid you to talk about something
+off-topic. "There is a room for that!". Even off-topic is
+a topic now! As if most interesting things in life would not
+come from the boundaries of the so called topics. The
+same happens with sciences: physics, chemistry, geology...
+or inside them: astronomy, solid-state, organic... These
+departments can be useful, but only if you never forget
+that they are pure convention, and that the interaction
+between them and the whole natural world
+is the true endeavour of science. So I learn
+that even if you go to the Far West of freedom messages,
+idiocy is everywhere. And also lack of real freedom.
+<br><br>
+
+There are two types of geeks: those who really understand
+things and those who like trying fancy new things 
+because they look like in the movies, even if they don't
+really understand what are they doing. I am on this second
+group. And geeks from the first group rapidly notice the
+difference. Oh, no, they think, another dumb lost in our
+territory. Why do they even try? But dumbness has one
+thing: that you don't care about what others think, so
+I decided to explore different clients,
+especially command line one so as to be even closer
+to movies, and also 
+because some
+mysterious things started to happen in the clients 
+I was using (except Conversations which always 
+worked perfectly).
+For example, messages
+that I sent or received while using the mobile (Conversations
+app) but while being offline at the computer, never 
+arrived to the computer when I launched the desktop programs.
+What a weird thing! This would be unacceptable in the
+world of Asap or Belegram! I asked, again the dumb man
+crossing the swinging door. Almost nobody cared to answer.
+Some people threw some jargon at me, how nice. I replied
+with naive clarity,
+which seems not to be so welcome in these
+lands of forced cold-coolness.
+Some people replied nicely, but also ambiguously,
+which made me wonder if I was the only one losing messages
+in limbo. I still don't know. Then, when going to a place
+called github where the experts say expert things and
+improve their code, I find that the jargon word for that
+was MAM. Message Archive Management or something like that.
+So I go back to some rooms and ask: do you support MAM? 
+Oh, they thought, let's reply since it must be one of ours.
+NO, some client-rooms say. We plan to support this somewhere
+in the future. What a cool way to say "yes, we are all
+losing our offline messages in limbo". Maybe they don't
+suffer this because they all run servers that are all the
+time running, which raises many environmental flags.
+<br><br>
+
+Others replied: yes, we support it, but not in this version
+you are using. Oh, but my version is the very last LTS
+version. (I am throwing jargon at you as a joke: LTS means
+Long Term Support, so that you have a stable operating 
+system instead of the new of the newest with many bugs). So
+are you saying that my up-to-date distribution brings
+me an already old-fashioned version of your software? Am
+I dreaming? No, and there is more. They reply that I, yes,
+you are actually reading this,
+I, me, a nobody, should contact the
+operating system channel (!) in order to ask
+them (!!) to include
+a newer version of it. Wow! How important I must be!
+<br><br>
+
+There were other choices: use flatpak. Sorry, flatwhat?
+OK, I google it, oh sorry, I startpage it, oh sorry, I
+duckduck it, oh sorry, I p2ppunksearchwhatthefuck it...
+is that right now? OK, so I manage to learn what flatpak
+is and I install it, but oh, now I don't have encryption
+enabled. They say they have not included this the flatpak,
+but they will. I of course understand them: they develop
+free software, but this does not necessarily mean free
+support. They are not paid for this, so I find awesome
+that they even have done something already. I really
+appreciate their work, but we must remain critical about
+the actual result and about the human approach to it.
+<br><br>
+
+This list goes on and on. Many clients that are extremely
+difficult to install to avoid losing messages, or other
+nasty complications. I wonder: why not joining forces 
+and developing less clients that could be more reliable? 
+At least for a while.!<br><br>
+
+Anyway, there are good news after that. After trying many
+clients (not all of them of course) I found that both Dino 
+and Gajim work OK, 
+but not with the versions offered by the
+current operating system repositories (as of 20/11/20).
+I needed to upgrade the programs by other means,
+which is not
+nice for someone using the latest distribution version,
+always within long term support (stable) terms. Is XMPP
+ready to be proposed as a reliable alternative today, then?
+I am not sure. Maybe yes, but someone should convince
+me of it.
+<br><br>
+
+So using Dino and Gajim at the computer and Conversations
+at the mobile I was having a working environment. I could
+communicate with encryption and without losing messages.
+OK, but with who, and communicate about what? For a whole
+week all the content I exchanged was about the software.
+Meta content as best. But I want non-technical content
+as well. I found some groups, like the Environment one,
+(environment@chat.disroot.org) with a very friendly
+room-lord that allows off and cross topics. But not much
+more. It must be that I have not searched for long enough,
+but I have already devoted a lot of time by now.
+<br><br>
+
+Then I found a very interesting guy, Arne, who is the
+ creator of
+a site called monocles.de, which is a (meta)search engine,
+meaning it aggregates results of other search engines
+while not tracking you. He also provides xmpp addresses and
+cloud and email! Check it at https://monocles.de/ocean/
+Why am I sharing this? Because I found, to my amazement,
+that the whole thing is running with solar power, but 
+not only that: the solar station is right there at the
+very same roof! This is the kind of content that I like. 
+<br><br>
+This raises the issue of how polluting
+are servers. Servers are used everywhere to provide 
+communications between clients. And they provide quite
+a service! Let's say that A wants to exchange messages
+with B. But A is not online all the time, and neither is
+B. However, the server S is always online (best case
+scenario), so A can send a message to S and go to sleep.
+When B wakes, S will send the message to B and that's it.
+So convenient. But wait... do we really 
+need a machine running all
+the time? 
+<br><br>
+
+This does not sound quite environment-friendly,
+or even ethical. These server machines are emitting CO2
+all the time. So isn't it nice to have such machines
+powered by a "clean" energy? I say "clean" because even
+solar and other renewables also have their issues. As with
+other things, it is a scale of greys between black and 
+white. But we must not fall into the  black or white trap.
+Going a bit further to the white side is worth it, even
+if being still at a quite dark grey.
+<br><br>
+
+Arne kindly provided me with a nice XMPP address, cloud
+and e-mail services, so I am helping trying them and
+giving feedback. I would not mind paying to use such
+a service, or another similar one who had a closer location
+to mine. But will this provider succeed in the market? 
+Who knows. I wish it will. And we need many more like it.
+<br><br>
+
+I also tried Matrix, through a client called Element. I 
+think the most famous Matrix client was called Riot some
+time ago when I was trying to make r0oT (see blog
+post 5) work. Maybe 
+someone wanted a less revolutionary name, I don't know. 
+I preferred Riot (the name I mean). It works out of the
+box and it is evident from the beginning that they have
+more people working on it than in XMPP, or so it seems.
+From a technical perspective,
+it seems more polished and more apt for a new user. But
+then I learned that, while each XMPP server hosts its own
+content, each matrix server hosts a lot of redundant
+information. This is subtle. Redundancy can be a good and
+a bad thing. It is good because if one server fails, the
+others may not fail and the whole thing can keep running
+smoothly. From some perspective, this is a winner approach.
+<br><br>
+
+But it is not my perspective. 
+XMPP servers are much more lightweight,
+and even if it does not have the robustness of redundancy,
+it can be very reliable if it has a good backup system.
+So if a server goes down for some time some things are
+not working for a while (so what? are we so mad that we
+cannot wait for anything?) but they can be easily restored.
+And of course, being lighter, it consumes way less energy,
+which means XMPP is right now much more environmentfriendly
+than matrix. To me this is a decissive point. Both 
+protocols are awesome, both open source, both full of
+people working for better and more free communications...
+But from what I have learned, I prefer XMPP in terms of
+simplicity, lightweight and low emissions. Of course I
+may be wrong and someone could make my opinion change.
+<br><br>
+
+Aside from the technical aspects, I also found little 
+content that was not technical. Some interesting groups
+but very silent. Some room-lords as well... quite a 
+similar experience to XMPP
+<br><br>
+
+There were many more experiences there. Finding interesting
+mail lists about amazing projects like gemini, which
+made me discover gopher as well. They are "alternative
+internets" based on simple plain text and a strong focus
+on content, although ironically, most of the content I
+found was meta again, that is, content about the container.
+Also found a group of Gaians, very nice vegan people, 
+extremely rude guys, amazing projects and a plethora of
+mind blowing activities that could be the end of your
+offline life if you would sell your soul to it.
+<br><br>
+
+There is a last technical thing worth mentioning. It was
+the use of Tox and Jami. Both Peer-to-Peer (P2P) protocols.
+P2P means that if A wants to send a message to B, instead
+of using a server S as a bridge, A just sends the message
+directly to B. But what if B is not online?
+Well, you must wait.
+What if, by the time B comes online, 
+you are already offline?
+Well, you will need to wait until both are online at the
+same time. The messages are not lost: they simply must
+wait for the connection to be made between the two. This
+may sound very inconvenient, but they don't need a server
+running and polluting all the time. They are also free to
+communicate without the control of the server, which can
+be a nice or a not-nice player. Even if the server is not
+unfriendly, governments can easily target them to control
+the information flowing through them. For example, reading
+the messages if unencrypted, or blocking the servers 
+so that they can isolate people within a country from 
+communication with the rest of the world. With P2P no one
+knows that you are communicating with somebody. Well, I
+am sure the extremely clever people from government
+agencies can peak into some communications, but I think 
+it would be extremely harder for them to do it.
+<br><br>
+
+To me, using Tox or Jami is like using a walkie-talkie
+with a friend instead of using a mobile phone. But without
+the distance limit or the eavesdropping of unencrypted
+radio waves. Just amazing. I plan to use P2P messages
+a lot.
+<br><br>
+
+I already knew Jami, which I used during the first
+covid lockdown
+with friends for video calls and it worked perfectly well.
+Tox is new to me. For chat, it looks better than Jami
+because you can have group chats! But the behaviour of
+these groups feels quite buggy for now. But what a great
+start! Communications without servers! And I don't care
+about the waiting thing.
+In fact, I consider that, far from being
+a limitation, it is a feature. The less you are exposed
+to immediacy, the healthier you will stay. And I don't
+say this in a paternal way. No, I call this topic because
+it is directly related to the topic of freedom. 
+Let's finish
+this long post with some thinking about freedom and some
+conclusions.
+<br><br>
+
+After two weeks of online adventures that felt like
+exploring Twenty Thousand Leagues Under the Web, did I gain
+more freedom? Short answer: no, but I gained more
+individual power.
+<br><br>
+The most noticeable
+effect was that, since I invested so much time exploring,
+learning tech-things, which is a thing that generates
+in me a lot of dopamine, I became way dumber than I was.
+Lots of new things, things that look exciting, promising
+features, hypes, new interactions... this is dopamine's
+Disneyland. I could easily spend a whole day with little
+food and almost no sleep. Without touching a book or doing
+hard thinking at all. Tech-world can seem hard, but in fact
+is anything but hard-thinking. Some clever people has
+written some code, but that's the end of intelligence there.
+The rest is trying to sort out obstacles more due to a
+pathological lack of pedagogy permeating this world than
+the challenge of a really difficult problem. 
+<br><br>
+
+So when I woke up from this voyage, I tried to read a 
+book and experienced a lot of difficulty focusing on it.
+My brain was expecting more new things, and wanted the
+dopamine with it. Wanted more new users, more news, more
+and more... And boy, if you want dopamine forever, you
+may have it, because the number of fascinating new things
+never ends in such a world. Never. You can spend a hundred
+lives in front of your computer and never stop being
+amazed. This is really a rivetting thing, but also a very
+dangerous one.
+<br><br>
+
+Not only you lose your mental health with it due to an
+overdose of dopamine that renders your brain impatient,
+devoid of motivation, with its effort-reward circuits
+completely corrupted, but also leaves your body in a
+state of shame. Not to mention the state of your spirit,
+since nothing will harm your mindfulness more than a 
+constant exposure to dopamine.
+<br><br>
+
+Conclusions:
+I understand the approach of building a more freedom
+respecting tools for communication, but I also see it 
+as a way of saying: we don't want the drugs offered by
+big corporations, so let's build our own. 
+<br><br>
+
+At the end of the day, the word freedom keeps appearing
+and everyone (me included) is using it as a
+container in which to fill
+whatever meaning interests them more. As I have already
+written in my blog post #3, we have lost the ancient
+meaning of freedom, which is by far the most interesting
+of it. The current meaning (not the free as gratis but
+the free as freedom) is a synonym of power. Try building
+a sentence with freedom and change the word by power. It
+will mean the same. So what is the point of having such
+a word if we already had another, and a powerful one, pun
+intended?
+<br><br>
+
+In the ancient sense, freedom is not about what you can do,
+but about what you want. More specifically, it is about
+whether what you want is what you really want. It is
+about asking whethere your thoughts and volitions are
+really determined by you, or at least whether they drive
+you against yourself or not. Are your actions the
+product of manipulation? Do you consider yourself as
+a manipulated being? Are you aware that the less
+manipulated you think you are the more manipulated you
+actually are? Etc. 
+<br><br>
+
+If we had a truly freedom software, it could be a single
+line of code like echoing: don't use software at all! This
+is of course (half) a joke. But now being serious, a free
+software should not just be about your power
+of communication (the modern meaning of the word),
+to be free from corporations services,
+but also about your truly ancient-meaning 
+freedom, like to be free of yourself!
+This would mean facilitating 
+abstention from the software itself, avoiding all the
+mechanisms of dopamine generation that are the ones that
+really slave you. I feel sorry for those that, raising
+the flag of freedom against the tyranny of Twitter,
+they build a 
+Twitter clone like GNUsocial or Mastodon
+ where they can "freely" continue vomiting
+hate and haste or other forms of manipulation/addiction.
+<br><br>
+
+These two weeks have been an exploration of a world that
+is focused on individual powered technology, which is
+great, and I have found many aspects of it that can be
+relevant to fight environmental pollution. But
+I have not found a trace
+of ancient freedom. I mainly found tech-addicts, which is
+to say tech-slaves, self-recognized or not. And I have
+seen how I was on the verge to become one as well. Most
+people won't agree with me in this (I don't care), but
+it is pointless to fight a dictionary word. If they want
+to call this freedom, so be it. I still prefer to use
+freedom for the ancient meaning and translating 
+accordingly when I hear the modern meaning is used. No
+problem. But why not calling it individual power software
+instead of free software? 
+
+It is very clear to me that
+what it does is regaining the power of communications to
+the individual users, but it is not doing a single step
+to regain its critical thinking, to regain its healthy
+dopamine levels, to think more about what is important...
+In short, freeing yourself from corporation services does
+not make you free: it makes you more powerful, but power
+can be used in ancient-free and in ancient-nonfree ways.
+Where is such problem addressed? I think it is not even
+being recognized as such, from what I know, which is,
+admittedly, very little.
+<br><br>
+
+It has been, in all, a worthy experience. 
+But now I must come back
+to the offline world, where I can stay away from these
+connectivity-dopamine traps. There are also many 
+offline-dopamine traps out there, like love, for 
+example! I will write about this one day, for now keep
+it as a provocation. 
+To me, technology is great as a user if I can
+set it up fast and use it so as I have MORE time to do
+other things like on/offline thinking or off/online CONTENT.
+If
+this software needs more user time-investment, then it is
+a bad start, perhaps even less freeing than using a
+corporation medium where you focus on for example climate
+action. 
+<br><br>
+
+To gain individual power for software use is a war worth
+fighting for, but, to me, only if you have already:<br>
+1) gone vegan and stopped thinking the world is ours<br>
+2) divested your money from non-ethical banks<br>
+3) minimized your consumption and waste to the minimum<br>
+4) then I see it is time to fight corporations on a 
+software level!<br><br>
+
+If you are fighting in 4) without having fought in 1), 
+2) and 3), then maybe you should reconsider your
+priorities.
+<br><br>
+Notice that even neo<b>liberal</b>
+people use the terms "liberal" (from libre),
+which out from the US
+means "don't regulate markets so companies can behave as
+violently as they want", or 
+"free market" which of course addresses the "freedom" 
+(=power) to do whatever they want.<br><br>
+
+When we don't care about what
+words mean they become empty so that everyone fills the
+content they prefer.
+<br><br>
+We could imagine a world where people were free of 
+corporation-based internet and at the same time
+complete slaves of their own products. There are two
+related but different fights for freedom. Let's fight
+for both!<br><br>
+
+
+
+
+ 
+ 
+ 
+
+<br><br>
+</body>
+</html>
+
