@@ -528,13 +528,171 @@ At this point it should be clear that there are symmetric
 positions that are equivalent and not worth mentioning
 twice. So, for example, we can consider a 1 x n bar and
 use the conclusions to know what can happen for a n x 1 bar.
-In this case we have:
+<br><br>
+
+Imagine we have a 2 x 3 game:
+<pre>
+ ._____._____._____.
+ |     |     |     |
+ |death|     |     |
+ |_____|_____|_____|
+ |     |     |     |
+ |     |     |     |
+ |_____|_____|_____|
+</pre>
+We have 5 different choices for our first move as A players,
+here marked with numbers:
+<pre>
+ ._____._____._____.
+ |     |     |     |
+ |death|  4  |  5  |
+ |_____|_____|_____|
+ |     |     |     |
+ |  1  |  2  |  3  |
+ |_____|_____|_____|
+</pre>
+The choice marked as 1 is L (losing), and so is 2.
+Choice 3 is W (winning). Finally, 4 and 5 are both L.<br><br>
+
+Knowing this, what about a 2 x 4 game?
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |     |     |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |     |  1  |
+ |_____|_____|_____|_____|
+</pre>
+Is this move by A W or L? We can see that, after this, 
+B can play (2,1), (1,4), (1,3) or (1,2) and then we 
+can easily win. What if B plays (2,2)? 
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |     |     |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |  2  |  2  |  1  |
+ |_____|_____|_____|_____|
+</pre>
+Notice how we can win by playing (1,3). What about
+B playing (2,3) instead?
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |     |     |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |  2  |  1  |
+ |_____|_____|_____|_____|
+</pre>
+We cannot play (2,1) or (2,2). We cannot play (1,2) either.
+If we play (1,3) we also lose. Our only hope lies in
+(1,4)! 
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |     |  3  |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |  2  |  1  |
+ |_____|_____|_____|_____|
+</pre>
+Then B cannot play (1,3) or (2,1). Neither (1,2). If 
+B plays (2,2):
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |     |  3  |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |  4  |  2  |  1  |
+ |_____|_____|_____|_____|
+</pre>
+then we cannot play (2,1) or (1,2). But (1,3)?
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |  5  |  3  |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |  4  |  2  |  1  |
+ |_____|_____|_____|_____|
+</pre>
+We win! Conclusion: the move
+<pre>
+ ._____._____._____._____.
+ |     |     |     |     |
+ |death|     |     |     |
+ |_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |     |  1  |
+ |_____|_____|_____|_____|
+</pre>
+is a winning one for A.<br><br>
+
+Can this be generalized to a 2 x n bar?
 <pre>
  ._____._____._____.     ._____._____._____.
  |     |     |     |     |     |     |     |
  |death|     |     | ... |     |     |     |
  |_____|_____|_____|     |_____|_____|_____|
+ |     |     |     |     |     |     |     |
+ |     |     |     | ... |     |     |     |
+ |_____|_____|_____|     |_____|_____|_____|
 </pre>
+
+We could like
+<pre>
+ ._____._____._____.     ._____._____._____.
+ |     |     |     |     |     |     |     |
+ |death|     |     | ... |     |     |     |
+ |_____|_____|_____|     |_____|_____|_____|
+ |     |     |     |     |     |     |     |
+ |     |     |     | ... |     |     |  1  |
+ |_____|_____|_____|     |_____|_____|_____|
+</pre>
+so B cannot eat (2,1) or (2,2). If B plays (1,j) for
+whatever j the game is reduced to a new game of 
+a 2 x m bar with m smaller than n and we can begin again.
+So B could eat (2,i) for i greater than 2:
+<pre>
+ ._____._____._____.     ._____._____._____.
+ |     |     |     |     |     |     |     |
+ |death|     |     | ... |     |     |     |
+ |_____|_____|_____|     |_____|_____|_____|
+ |     |     |     |     |     |     |     |
+ |     |     |     | ... |  2  |  2  |  1  |
+ |_____|_____|_____|     |_____|_____|_____|
+</pre>
+So we answer by eating (1,i+1)
+<pre>
+ ._____._____._____.     ._____._____._____.
+ |     |     |     |     |     |     |     |
+ |death|     |     | ... |     |  3  |  3  |
+ |_____|_____|_____|     |_____|_____|_____|
+ |     |     |     |     |     |     |     |
+ |     |     |     | ... |  2  |  2  |  1  |
+ |_____|_____|_____|     |_____|_____|_____|
+</pre>
+Then B cannot play (1,j) or (2,1) or (2,2), so B is 
+restricted to play (2,i) again, but now with an i smaller
+than before, and we (A) will respond with (1,i+1) again.
+This inevitably leads to
+<pre>
+ ._____._____._____.     ._____._____._____.
+ |     |     |     |     |     |     |     |
+ |death|     |  7  | ... |  5  |  3  |  3  |
+ |_____|_____|_____|     |_____|_____|_____|
+ |     |     |     |     |     |     |     |
+ |     |  6  |  4  | ... |  2  |  2  |  1  |
+ |_____|_____|_____|     |_____|_____|_____|
+</pre>
+which is a W for A. We have shown what is the strategy
+for playing a 2 x n bar and force winning. However, we 
+don't know how to generalize the strategy for a generic
+bar! Can you solve this problem?
 
 
 <br><br>
