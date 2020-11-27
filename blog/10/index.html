@@ -1,0 +1,543 @@
+<!-- **********{{{ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../../css.css" media="screen" title="aleix" />
+</head>
+<body>
+<!-- *****}}} --> 
+<br>
+
+Chomp:<br><br>
+
+Chomp is a game in which you have a chocolate bar made of
+blocks arranged in a m x n matrix, where m is the number of
+rows and n the number of columns. For example, a 4 x 6
+bar would look like
+<pre>
+  n  0     1     2     3     4     5
+m ._____._____._____._____._____._____.
+  |     |     |     |     |     |     |
+0 |death|     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+1 |     |     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+2 |     |     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+3 |     |     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+</pre>
+Notice how the (0,0) block is poisoned, so you want to 
+avoid eating it. The rules are very simple: player A begins
+the game by choosing a block, and must eat all the
+blocks that are to the right and to the bottom of the
+selected block. So if A chooses the block (1,4) our 
+chocolate bar will look like
+<pre>
+  n  0     1     2     3     4     5
+m ._____._____._____._____._____._____.
+  |     |     |     |     |     |     |
+0 |death|     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |            
+1 |     |     |     |     |            
+  |_____|_____|_____|_____|            
+  |     |     |     |     |            
+2 |     |     |     |     |            
+  |_____|_____|_____|_____|            
+  |     |     |     |     |            
+3 |     |     |     |     |            
+  |_____|_____|_____|_____|            
+</pre>
+Now it is B's turn, and it decided to take the (0,2) block,
+so B has to eat all the blocks to the right and to the
+bottom of it. The bar will look like:
+<pre>
+  n  0     1                        
+m ._____._____.                        
+  |     |     |                        
+0 |death|     |                        
+  |_____|_____|                        
+  |     |     |                        
+1 |     |     |                        
+  |_____|_____|                        
+  |     |     |                        
+2 |     |     |                        
+  |_____|_____|                        
+  |     |     |                        
+3 |     |     |                        
+  |_____|_____|                        
+</pre>
+Now it is A's turn again, and it decided to choose (2,0),
+so we obtain
+<pre>
+  n  0     1                        
+m ._____._____.                        
+  |     |     |                        
+0 |death|     |                        
+  |_____|_____|                        
+  |     |     |                        
+1 |     |     |                        
+  |_____|_____|                        
+</pre>
+B now plays (1,1), obtaining
+<pre>
+  n  0     1                        
+m ._____._____.                        
+  |     |     |                        
+0 |death|     |                        
+  |_____|_____|                        
+  |     |                              
+1 |     |                              
+  |_____|                              
+</pre>
+A decides to eath (1,0), so
+<pre>
+  n  0     1                        
+m ._____._____.                        
+  |     |     |                        
+0 |death|     |                        
+  |_____|_____|                        
+</pre>
+B eaths (0,1), leaving 
+<pre>
+  n  0                              
+m ._____.                              
+  |     |                              
+0 |death|                              
+  |_____|                              
+</pre>
+ which means A must eat the poisoned block and dies, 
+ or simply loses. B has won. 
+ <br><br>
+We could have depicted the whole match as 
+<pre>
+  n  0     1     2     3     4     5
+m ._____._____._____._____._____._____.
+  |     |     |     |     |     |     |
+0 |death|  6  |  2  |  2  |  2  |  2  |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+1 |  5  |  4  |  2  |  2  |  1  |  1  |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+2 |  3  |  3  |  2  |  2  |  1  |  1  |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+3 |  3  |  3  |  2  |  2  |  1  |  1  |
+  |_____|_____|_____|_____|_____|_____|
+</pre>
+where odd numbers are A's moves and even numbers are 
+B's moves. This way of displaying the game allows a single
+drawing of the block with all the moves in it. It could
+be even more simple as
+<pre>
+  n  0     1     2     3     4     5
+m ._____._____._____._____._____._____.
+  |     |     |     |     |     |     |
+0 |death|  6  |  2  |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+1 |  5  |  4  |     |     |  1  |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+2 |  3  |     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+  |     |     |     |     |     |     |
+3 |     |     |     |     |     |     |
+  |_____|_____|_____|_____|_____|_____|
+</pre>
+but I prefer the previous one.<br><br>
+
+Why writing about this game here? Because there is an 
+awesome proof that shows that there exists a strategy for
+player A to always win the game, but such strategy is not
+known: it is an open problem of mathematics (at least it is
+today 22/11/20). I find this fascinating: the proof that
+there exists a winning strategy is there, but does not
+provide you with such strategy. This is called a 
+non-constructive proof. But I would call it a 
+mystery-constructive proof instead! It builds mystery and
+awe. It tells you it is there but does not tell you what
+it is. Like treasure map: before you have the
+map you don't know that there is a treasure there. If you
+were presented by the treasure, directly, you probably
+would not pay much attention to it. But the map makes the
+magic, being the proof of the existence and seducing you
+into going for it.<br><br>
+
+The actual proof is also a riveting miracle: it uses a
+strategy-stealing argument, invented by John Nash, the
+mathematician whose life was portrayed in the movie <i>A
+Beautiful Mind</i>. He invented it to show that the game
+of <i>hex</i> can also be won by player A (the first to
+play) if it plays a perfect strategy. <br><br>
+
+Let's see an simple example of a strategy-stealing 
+argument (found <a href="https://en.wikipedia.org/wiki/Strategy-stealing_argument" target=_blank>here</a>). 
+In tic-tac-toe, we suppose the second player, B, is using
+a strategy S which guarantees winning. Then, first is the
+turn of A, who places an X somewhere, let's call it the block
+1, and then it is 
+B's turn, who using winning strategy S, will place a O
+somewhere else, let's call it block 2.
+At this point we can ask: why can't A
+play following the same strategy as B? A can move according
+to such winning book as well. But no, you may say, 
+because while for player B the block 1 was already
+occupied, for A such block is still unused!<br><br>
+
+Let's draw this in order to understand it better:
+<pre>
+1|_|_
+_|2|_
+ | |
+</pre>
+This is the first situation we described, in which
+A plays 1 and B plays 2. So we then ask whether A could have played B's location, i.e.
+<pre>
+i|_|_
+_|1|_
+ | |
+</pre>
+where we have placed an "i" at what we will call the
+ignored position.<br><br>
+
+But what if, later in the game, the strategy tells A to
+place an X at the top-left block, the ignored position?
+Imagine we are at
+<pre>
+i|2|_
+_|1|_
+ | |
+</pre>
+and that the winning book says it is time to play at i. This
+is the point where the argument becomes really interesting. 
+Player A simply plays another random position,
+<pre>
+i|2|_
+_|1|3
+ | |
+</pre>
+and then swaps 3 and i so that we get
+<pre>
+3|2|_
+_|1|i
+ | |
+</pre>
+Notice how this is still a valid situation. It is not
+the situation we were before but it is still a valid one!
+Why? Because in the first described scenario A could have
+played the right-middle block instead of the left-top
+one, and the book S would still player B how to win. This
+would mean this:
+<pre>
+4|3|_
+_|2|1
+ | |
+</pre>
+Notice here how A starts the game (1) without having the
+book, so then B uses the book to move (2), to which A
+can reply (3) again without the book. The book must surely
+contemplate this situation! So that it recommends B to
+play 4.<br><br>
+
+We can continue the game (in which A has the book) as
+<pre>
+3|2|6
+_|1|i
+5| |4
+</pre>
+which is equivalent to 
+<pre>
+x|o|o
+_|x|i
+x| |o
+</pre>
+We clearly see that A can now win. Is this inevitable?
+Yes, because no matter what B responds, A can answer 
+by following the winning book S. The book can either
+recommend an empty block, so that the game continues,
+or recommend the i block, so that we swap again and we
+obtain a different but still valid scenario.<br><br>
+
+But notice that our hypothesis was that B has a book that
+ensures victory, while we have seen how A, by having the
+same book, can always win. So we have found a contradiction
+in our hypothesis. We must conclude, then, that there
+is no book that guarantees victory for player B!<br><br>
+
+But this can mean two things: either A is able to force
+a win or it is able to force a tie. In this game, further
+analysis shows that the optimal playing by both
+players leads to a tie. But what if the game cannot end
+in a tie, like hex? Then it means that A can force a 
+victory!<br><br>
+
+Notice how in Chomp there can't be ties either! One of 
+the players must eat the poisoned block, which means that
+the first player can always force a victory. Isn't this
+a fascinating thing to discover? Most of all because we
+don't know which strategy this is!<br><br>
+
+Talking with Tim, a mathematician and an XMPP colleague, 
+he posed the following
+question: "does that proof guarantee that the 
+winning moves can be found without considering all 
+the possibilities?" In other words, can the brute force
+approach be the only way to find such strategy? My first
+reaction was to say no, since I find that we cannot call
+brute force a "strategy", but I really don't know. 
+Subjectively, if we need to know all the moves
+in order to force a win,
+I resist calling it a strategy. For small boards that
+could be feasible, but for huge boards only a very strong
+computer or even a God's mind could know how to force a 
+win. <br><br>
+
+To me, a strategy would be a set of rules that you follow
+to try to achieve a goal, these rules being based on the
+current state of the game and without having to consider
+all the possible futures. Then, the strategy can be 
+successful or not. But if we calculate all possible
+futures stemming from a state, what we have is not a
+strategy, but a certainty. However, this is just a 
+semantic discussion, and what it is interesting is 
+whether there is a local rule to achieve victory that
+does not involve total knowledge. Otherwise I don't find
+the problem interesting.<br><br>
+
+Some time ago, exploring Brilliant.org, I learned about
+an interesting approach to this chocolate game: imagine
+you just have 5 blocks of chocolate, all of them yummy
+but one of them marked as being full of poison. Instead
+of worrying about the space configuration of the blocks,
+you just need to say how many blocks you eat in each turn,
+choosing between 1 or 2 blocks.
+So if player A says 2, there are
+3 blocks left. Then B says 2 and A will have to eat the
+poison. This game can be written as AABBA. <br><br>
+
+Another run of the game: now A starts eating 1, and B
+eats also 1. Then A can win in such game by eating 2: ABAAB.
+<br><br>
+
+The idea is to eat the 4th block, so that you force the
+other to eath the 5th. <br><br>
+
+Notice how there are no ties here, so each position is
+either a winning or a losing position. Notice this
+table:
+<pre>
+|------------+-------------------|
+| blocks left| winning or losing |
+|------------+-------------------|
+| 1          | losing            |
+|------------+-------------------|
+| 2          | winning           |
+|------------+-------------------|
+| 3          | winning           |
+|------------+-------------------|
+| 4          | losing            |
+|------------+-------------------|
+| 5          | winning           |
+|------------+-------------------|
+</pre>
+So one needs to avoid losing positions! What if we have
+10 blocks to begin with? We can build the table:
+<pre>
+|------------+-----|
+| blocks left| w/l |
+|------------+-----|
+| 1          | l   |
+|------------+-----|
+| 2          | w   |
+|------------+-----|
+| 3          | w   |
+|------------+-----|
+| 4          | l   |
+|------------+-----|
+| 5          | w   |
+|------------+-----|
+| 6          | w   |
+|------------+-----|
+| 7          | l   |
+|------------+-----|
+| 8          | w   |
+|------------+-----|
+| 9          | w   |
+|------------+-----|
+| 10         | l   |
+|------------+-----|
+</pre>
+The pattern is very clear: lww. Knowing this, if you
+are given a number of initial blocks, you can know whether
+to be player A or B in order to force a win. If there are
+4,7,10,etc blocks then you don't want to be player A 
+because this would mean you begin in a losing position!
+<br><br>
+
+Once you know you are in a winning position the strategy
+is very clear: just jump to a next winning strategy. If
+you are at state 6, which is a w position, you must
+eat two blocks, so you leave the bar in state 4, which
+is a losing position for B. Here the concept of strategy
+does not need to have a God knowledge, since there is
+a clear pattern. Could we define strategy as something
+equivalent to following a pattern?<br><br>
+
+Again inspired by the problems found in a Brilliant.org 
+course, we can analyze a slightly more involved chocolate
+game. Now we have a bar of two poisoned blocks, and
+on top of some of them we have some chocolate blocks
+that are not poisoned, marked as choc:
+<pre>
+         +--------+
+         |  choc  |
+         +--------+
+         |  choc  |
+         +--------+
+         |  choc  |
+         +--------+--------+
+         |  choc  |  choc  |
+         +--------+--------|
+         | poison | poison |
+         +--------+--------+
+</pre>
+In each turn, a player can eat as many chocs as it wants,
+but choosing from one block or the other. It is not allowed
+to take chocs from different blocks in a single move.<br><br>
+
+The player losing is the one facing no chocs anywhere. So
+if you are the first player, what should you do? We can
+build a table here as well, where "chocs left" means
+"not poisoned chocs left" and (o,x) means that there
+are chocs in the left pile but none in the right one.
+Try to see why each position is marked l or w:
+<pre>
+|------------+-----|
+| chocs left | w/l |
+|------------+-----|
+| (x,x)      | l   |
+|------------+-----|
+| (o,x)      | w   |
+|------------+-----|
+| (x,o)      | w   |
+|------------+-----|
+| (1,1)      | l   |
+|------------+-----|
+| (2,1)      | w   |
+|------------+-----|
+| (3,1)      | w   |
+|------------+-----|
+| (4,1)      | w   |
+|------------+-----|
+</pre>
+It is clear that, since the first state is (4,1) we just
+eat 3 chocs from the left pile so that we leave player B
+in the losing position (1,1).<br><br>
+
+These tables are really useful, but in this case we could
+build a chart to analyze the game even better:
+<pre>
+|---+---+---+---+---+---+---|
+|   | 0 | 1 | 2 | 3 | 4 | 5 |
+|---+---+---+---+---+---+---|
+| 0 | L | W | W | W | W | W |
+|---+---+---+---+---+---+---|
+| 1 | W | L |   |   |   |   |
+|---+---+---+---+---+---+---|
+| 2 | W |   |   |   |   |   |
+|---+---+---+---+---+---+---|
+| 3 | W |   |   |   |   |   |
+|---+---+---+---+---+---+---|
+| 4 | W |   |   |   |   |   |
+|---+---+---+---+---+---+---|
+| 5 | W |   |   |   |   |   |
+|---+---+---+---+---+---+---|
+</pre>
+First of all, each state is given by (row,column), where
+row indicates the number of chocs on the left pile
+and the column the number of chocs on the right pile. And
+each element of the matrix tells you whether, if you are
+faced with this state in your turn, you can force victory
+(W) or not (L).<br><br>
+
+Try to see why I have marked L or W each of these cells.  
+Can you complete the whole chart? It is a nice exercise. 
+This is my solution:
+<pre>
+             stack 1
+ |---+---+---+---+---+---+---|
+ |   | 0 | 1 | 2 | 3 | 4 | 5 |
+ |---+---+---+---+---+---+---|
+ | 0 | L | W | W | W | W | W |
+s|---+---+---+---+---+---+---|
+t| 1 | W | L | W | W | W | W |
+a|---+---+---+---+---+---+---|
+c| 2 | W | W | L | W | W | W |
+k|---+---+---+---+---+---+---|
+ | 3 | W | W | W | L | W | W |
+2|---+---+---+---+---+---+---|
+ | 4 | W | W | W | W | L | W |
+ |---+---+---+---+---+---+---|
+ | 5 | W | W | W | W | W | L |
+ |---+---+---+---+---+---+---|
+</pre>
+A clear pattern emerges! If you are faced with a diagonal
+cell state, like (3,3) or (5,5) then your opponent can
+force victory upon you. However, if you are at any other
+cell, you can win by bringing your opponent to move
+in a diagonal cell. For example, if you are at (5,3) you
+just eat two chocs from the left pile so that your
+opponent faces the state (3,3), which is a losing position.
+<br><br>
+
+Having seen these previous examples, we can ask whether
+we could find a pattern in actual Chomps, but the answer
+to this question is, as already said before, 
+currently an open problem. <br><br>
+
+There are simple situations where we can extract a
+good winning strategy, however. For example, when faced
+with a 2 x 2 bar, what is the best we can do?
+<pre>
+      i              ii
+ ._____._____.  ._____._____.
+ |     |     |  |     |     | 
+ |     |  X  |  |     |  .  | 
+ |_____|_____|  |_____|_____|
+ |     |     |  |     |     | 
+ |death|     |  |death|  X  |
+ |_____|_____|  |_____|_____|
+</pre>
+Should we play like in i) or ii)? Clearly i), since
+this forces the B player to eat only one of the remaining
+chocs (not poisoned blocks), while if you play ii), then
+player B can easily eat the other two chocs in a single
+move and leaving you facing the poisoned block. So for
+a 2 x 2 bar there is a known winning "strategy", but it
+requires to have a whole (God) knowledge of all the
+possible futures after each move.<br><br>
+
+At this point it should be clear that there are symmetric
+positions that are equivalent and not worth mentioning
+twice. So, for example, we can consider a 1 x n bar and
+use the conclusions to know what can happen for a n x 1 bar.
+In this case we have:
+<pre>
+ ._____._____._____.     ._____._____._____.
+ |     |     |     |     |     |     |     |
+ |death|     |     | ... |     |     |     |
+ |_____|_____|_____|     |_____|_____|_____|
+</pre>
+
+
+<br><br>
+</body>
+</html>
+
